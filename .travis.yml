@@ -1,0 +1,4 @@
+language: objective-c
+osx_image: xcode11.2
+
+script: xcodebuild -project DerivedDataDeleter.xcodeproj -scheme DerivedDataDeleter CODE_SIGNING_ALLOWED=NO

@@ -1,0 +1,905 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		492FF5362382278A00C4A3F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492FF5352382278A00C4A3F3 /* AppDelegate.swift */; };
+		492FF5382382278A00C4A3F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492FF5372382278A00C4A3F3 /* ContentView.swift */; };
+		492FF53A2382278F00C4A3F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 492FF5392382278F00C4A3F3 /* Assets.xcassets */; };
+		492FF53D2382278F00C4A3F3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 492FF53C2382278F00C4A3F3 /* Preview Assets.xcassets */; };
+		492FF5402382278F00C4A3F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 492FF53E2382278F00C4A3F3 /* Main.storyboard */; };
+		492FF54C2382278F00C4A3F3 /* DerivedDataDeleterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492FF54B2382278F00C4A3F3 /* DerivedDataDeleterTests.swift */; };
+		492FF5572382278F00C4A3F3 /* DerivedDataDeleterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492FF5562382278F00C4A3F3 /* DerivedDataDeleterUITests.swift */; };
+		492FF56B238227B700C4A3F3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 492FF56A238227B700C4A3F3 /* Cocoa.framework */; };
+		492FF56E238227B700C4A3F3 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492FF56D238227B700C4A3F3 /* SourceEditorExtension.swift */; };
+		492FF570238227B700C4A3F3 /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492FF56F238227B700C4A3F3 /* SourceEditorCommand.swift */; };
+		492FF575238227B700C4A3F3 /* Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 492FF568238227B700C4A3F3 /* Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		492FF5A423822E1D00C4A3F3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492FF5A323822E1D00C4A3F3 /* main.swift */; };
+		492FF5A623822E4A00C4A3F3 /* DerivedDataDeleterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492FF5A523822E4A00C4A3F3 /* DerivedDataDeleterProtocol.swift */; };
+		492FF5A723822E4A00C4A3F3 /* DerivedDataDeleterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492FF5A523822E4A00C4A3F3 /* DerivedDataDeleterProtocol.swift */; };
+		4972C09D2382408A00C7FCBE /* DerivedDataDeleterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492FF5A523822E4A00C4A3F3 /* DerivedDataDeleterProtocol.swift */; };
+		49CCE644238244AA006851A6 /* Helper.xpc in Embed XPC Service */ = {isa = PBXBuildFile; fileRef = 492FF59423822E0800C4A3F3 /* Helper.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		492FF5482382278F00C4A3F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 492FF52A2382278A00C4A3F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 492FF5312382278A00C4A3F3;
+			remoteInfo = DerivedDataDeleter;
+		};
+		492FF5532382278F00C4A3F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 492FF52A2382278A00C4A3F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 492FF5312382278A00C4A3F3;
+			remoteInfo = DerivedDataDeleter;
+		};
+		492FF573238227B700C4A3F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 492FF52A2382278A00C4A3F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 492FF567238227B700C4A3F3;
+			remoteInfo = Extension;
+		};
+		492FF59D23822E0800C4A3F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 492FF52A2382278A00C4A3F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 492FF59323822E0800C4A3F3;
+			remoteInfo = DerivedDataDeleterHelper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		492FF579238227B700C4A3F3 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				492FF575238227B700C4A3F3 /* Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49CCE64323824496006851A6 /* Embed XPC Service */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
+			dstSubfolderSpec = 16;
+			files = (
+				49CCE644238244AA006851A6 /* Helper.xpc in Embed XPC Service */,
+			);
+			name = "Embed XPC Service";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		492FF5322382278A00C4A3F3 /* DerivedDataDeleter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DerivedDataDeleter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		492FF5352382278A00C4A3F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		492FF5372382278A00C4A3F3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		492FF5392382278F00C4A3F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		492FF53C2382278F00C4A3F3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		492FF53F2382278F00C4A3F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		492FF5412382278F00C4A3F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		492FF5422382278F00C4A3F3 /* DerivedDataDeleter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DerivedDataDeleter.entitlements; sourceTree = "<group>"; };
+		492FF5472382278F00C4A3F3 /* DerivedDataDeleterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DerivedDataDeleterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		492FF54B2382278F00C4A3F3 /* DerivedDataDeleterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DerivedDataDeleterTests.swift; sourceTree = "<group>"; };
+		492FF54D2382278F00C4A3F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		492FF5522382278F00C4A3F3 /* DerivedDataDeleterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DerivedDataDeleterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		492FF5562382278F00C4A3F3 /* DerivedDataDeleterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DerivedDataDeleterUITests.swift; sourceTree = "<group>"; };
+		492FF5582382278F00C4A3F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		492FF568238227B700C4A3F3 /* Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Extension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		492FF56A238227B700C4A3F3 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		492FF56D238227B700C4A3F3 /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
+		492FF56F238227B700C4A3F3 /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
+		492FF571238227B700C4A3F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		492FF572238227B700C4A3F3 /* Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Extension.entitlements; sourceTree = "<group>"; };
+		492FF59423822E0800C4A3F3 /* Helper.xpc */ = {isa = PBXFileReference; explicitFileType = "wrapper.xpc-service"; includeInIndex = 0; path = Helper.xpc; sourceTree = BUILT_PRODUCTS_DIR; };
+		492FF59C23822E0800C4A3F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		492FF5A323822E1D00C4A3F3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		492FF5A523822E4A00C4A3F3 /* DerivedDataDeleterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DerivedDataDeleterProtocol.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		492FF52F2382278A00C4A3F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		492FF5442382278F00C4A3F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		492FF54F2382278F00C4A3F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		492FF565238227B700C4A3F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				492FF56B238227B700C4A3F3 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		492FF59123822E0800C4A3F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		492FF5292382278A00C4A3F3 = {
+			isa = PBXGroup;
+			children = (
+				492FF5342382278A00C4A3F3 /* DerivedDataDeleter */,
+				492FF54A2382278F00C4A3F3 /* DerivedDataDeleterTests */,
+				492FF5552382278F00C4A3F3 /* DerivedDataDeleterUITests */,
+				492FF56C238227B700C4A3F3 /* Extension */,
+				492FF59523822E0800C4A3F3 /* Helper */,
+				492FF569238227B700C4A3F3 /* Frameworks */,
+				492FF5332382278A00C4A3F3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		492FF5332382278A00C4A3F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				492FF5322382278A00C4A3F3 /* DerivedDataDeleter.app */,
+				492FF5472382278F00C4A3F3 /* DerivedDataDeleterTests.xctest */,
+				492FF5522382278F00C4A3F3 /* DerivedDataDeleterUITests.xctest */,
+				492FF568238227B700C4A3F3 /* Extension.appex */,
+				492FF59423822E0800C4A3F3 /* Helper.xpc */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		492FF5342382278A00C4A3F3 /* DerivedDataDeleter */ = {
+			isa = PBXGroup;
+			children = (
+				492FF5352382278A00C4A3F3 /* AppDelegate.swift */,
+				492FF5372382278A00C4A3F3 /* ContentView.swift */,
+				492FF5392382278F00C4A3F3 /* Assets.xcassets */,
+				492FF53E2382278F00C4A3F3 /* Main.storyboard */,
+				492FF5412382278F00C4A3F3 /* Info.plist */,
+				492FF5422382278F00C4A3F3 /* DerivedDataDeleter.entitlements */,
+				492FF53B2382278F00C4A3F3 /* Preview Content */,
+			);
+			path = DerivedDataDeleter;
+			sourceTree = "<group>";
+		};
+		492FF53B2382278F00C4A3F3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				492FF53C2382278F00C4A3F3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		492FF54A2382278F00C4A3F3 /* DerivedDataDeleterTests */ = {
+			isa = PBXGroup;
+			children = (
+				492FF54B2382278F00C4A3F3 /* DerivedDataDeleterTests.swift */,
+				492FF54D2382278F00C4A3F3 /* Info.plist */,
+			);
+			path = DerivedDataDeleterTests;
+			sourceTree = "<group>";
+		};
+		492FF5552382278F00C4A3F3 /* DerivedDataDeleterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				492FF5562382278F00C4A3F3 /* DerivedDataDeleterUITests.swift */,
+				492FF5582382278F00C4A3F3 /* Info.plist */,
+			);
+			path = DerivedDataDeleterUITests;
+			sourceTree = "<group>";
+		};
+		492FF569238227B700C4A3F3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				492FF56A238227B700C4A3F3 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		492FF56C238227B700C4A3F3 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				492FF56D238227B700C4A3F3 /* SourceEditorExtension.swift */,
+				492FF56F238227B700C4A3F3 /* SourceEditorCommand.swift */,
+				492FF571238227B700C4A3F3 /* Info.plist */,
+				492FF572238227B700C4A3F3 /* Extension.entitlements */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		492FF59523822E0800C4A3F3 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				492FF5A523822E4A00C4A3F3 /* DerivedDataDeleterProtocol.swift */,
+				492FF5A323822E1D00C4A3F3 /* main.swift */,
+				492FF59C23822E0800C4A3F3 /* Info.plist */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		492FF5312382278A00C4A3F3 /* DerivedDataDeleter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 492FF55B2382278F00C4A3F3 /* Build configuration list for PBXNativeTarget "DerivedDataDeleter" */;
+			buildPhases = (
+				492FF52E2382278A00C4A3F3 /* Sources */,
+				492FF52F2382278A00C4A3F3 /* Frameworks */,
+				492FF5302382278A00C4A3F3 /* Resources */,
+				492FF579238227B700C4A3F3 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				492FF574238227B700C4A3F3 /* PBXTargetDependency */,
+				492FF59E23822E0800C4A3F3 /* PBXTargetDependency */,
+			);
+			name = DerivedDataDeleter;
+			productName = DerivedDataDeleter;
+			productReference = 492FF5322382278A00C4A3F3 /* DerivedDataDeleter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		492FF5462382278F00C4A3F3 /* DerivedDataDeleterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 492FF55E2382278F00C4A3F3 /* Build configuration list for PBXNativeTarget "DerivedDataDeleterTests" */;
+			buildPhases = (
+				492FF5432382278F00C4A3F3 /* Sources */,
+				492FF5442382278F00C4A3F3 /* Frameworks */,
+				492FF5452382278F00C4A3F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				492FF5492382278F00C4A3F3 /* PBXTargetDependency */,
+			);
+			name = DerivedDataDeleterTests;
+			productName = DerivedDataDeleterTests;
+			productReference = 492FF5472382278F00C4A3F3 /* DerivedDataDeleterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		492FF5512382278F00C4A3F3 /* DerivedDataDeleterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 492FF5612382278F00C4A3F3 /* Build configuration list for PBXNativeTarget "DerivedDataDeleterUITests" */;
+			buildPhases = (
+				492FF54E2382278F00C4A3F3 /* Sources */,
+				492FF54F2382278F00C4A3F3 /* Frameworks */,
+				492FF5502382278F00C4A3F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				492FF5542382278F00C4A3F3 /* PBXTargetDependency */,
+			);
+			name = DerivedDataDeleterUITests;
+			productName = DerivedDataDeleterUITests;
+			productReference = 492FF5522382278F00C4A3F3 /* DerivedDataDeleterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		492FF567238227B700C4A3F3 /* Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 492FF576238227B700C4A3F3 /* Build configuration list for PBXNativeTarget "Extension" */;
+			buildPhases = (
+				492FF564238227B700C4A3F3 /* Sources */,
+				492FF565238227B700C4A3F3 /* Frameworks */,
+				492FF566238227B700C4A3F3 /* Resources */,
+				49CCE64323824496006851A6 /* Embed XPC Service */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Extension;
+			productName = Extension;
+			productReference = 492FF568238227B700C4A3F3 /* Extension.appex */;
+			productType = "com.apple.product-type.xcode-extension";
+		};
+		492FF59323822E0800C4A3F3 /* Helper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 492FF5A023822E0800C4A3F3 /* Build configuration list for PBXNativeTarget "Helper" */;
+			buildPhases = (
+				492FF59023822E0800C4A3F3 /* Sources */,
+				492FF59123822E0800C4A3F3 /* Frameworks */,
+				492FF59223822E0800C4A3F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Helper;
+			productName = DerivedDataDeleterHelper;
+			productReference = 492FF59423822E0800C4A3F3 /* Helper.xpc */;
+			productType = "com.apple.product-type.xpc-service";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		492FF52A2382278A00C4A3F3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Saagar Jha";
+				TargetAttributes = {
+					492FF5312382278A00C4A3F3 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					492FF5462382278F00C4A3F3 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 492FF5312382278A00C4A3F3;
+					};
+					492FF5512382278F00C4A3F3 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 492FF5312382278A00C4A3F3;
+					};
+					492FF567238227B700C4A3F3 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					492FF59323822E0800C4A3F3 = {
+						CreatedOnToolsVersion = 11.3;
+						LastSwiftMigration = 1130;
+					};
+				};
+			};
+			buildConfigurationList = 492FF52D2382278A00C4A3F3 /* Build configuration list for PBXProject "DerivedDataDeleter" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 492FF5292382278A00C4A3F3;
+			productRefGroup = 492FF5332382278A00C4A3F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				492FF5312382278A00C4A3F3 /* DerivedDataDeleter */,
+				492FF5462382278F00C4A3F3 /* DerivedDataDeleterTests */,
+				492FF5512382278F00C4A3F3 /* DerivedDataDeleterUITests */,
+				492FF567238227B700C4A3F3 /* Extension */,
+				492FF59323822E0800C4A3F3 /* Helper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		492FF5302382278A00C4A3F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				492FF5402382278F00C4A3F3 /* Main.storyboard in Resources */,
+				492FF53D2382278F00C4A3F3 /* Preview Assets.xcassets in Resources */,
+				492FF53A2382278F00C4A3F3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		492FF5452382278F00C4A3F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		492FF5502382278F00C4A3F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		492FF566238227B700C4A3F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		492FF59223822E0800C4A3F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		492FF52E2382278A00C4A3F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				492FF5382382278A00C4A3F3 /* ContentView.swift in Sources */,
+				4972C09D2382408A00C7FCBE /* DerivedDataDeleterProtocol.swift in Sources */,
+				492FF5362382278A00C4A3F3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		492FF5432382278F00C4A3F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				492FF54C2382278F00C4A3F3 /* DerivedDataDeleterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		492FF54E2382278F00C4A3F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				492FF5572382278F00C4A3F3 /* DerivedDataDeleterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		492FF564238227B700C4A3F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				492FF56E238227B700C4A3F3 /* SourceEditorExtension.swift in Sources */,
+				492FF5A623822E4A00C4A3F3 /* DerivedDataDeleterProtocol.swift in Sources */,
+				492FF570238227B700C4A3F3 /* SourceEditorCommand.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		492FF59023822E0800C4A3F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				492FF5A723822E4A00C4A3F3 /* DerivedDataDeleterProtocol.swift in Sources */,
+				492FF5A423822E1D00C4A3F3 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		492FF5492382278F00C4A3F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 492FF5312382278A00C4A3F3 /* DerivedDataDeleter */;
+			targetProxy = 492FF5482382278F00C4A3F3 /* PBXContainerItemProxy */;
+		};
+		492FF5542382278F00C4A3F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 492FF5312382278A00C4A3F3 /* DerivedDataDeleter */;
+			targetProxy = 492FF5532382278F00C4A3F3 /* PBXContainerItemProxy */;
+		};
+		492FF574238227B700C4A3F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 492FF567238227B700C4A3F3 /* Extension */;
+			targetProxy = 492FF573238227B700C4A3F3 /* PBXContainerItemProxy */;
+		};
+		492FF59E23822E0800C4A3F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 492FF59323822E0800C4A3F3 /* Helper */;
+			targetProxy = 492FF59D23822E0800C4A3F3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		492FF53E2382278F00C4A3F3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				492FF53F2382278F00C4A3F3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		492FF5592382278F00C4A3F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		492FF55A2382278F00C4A3F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		492FF55C2382278F00C4A3F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DerivedDataDeleter/DerivedDataDeleter.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"DerivedDataDeleter/Preview Content\"";
+				DEVELOPMENT_TEAM = X4A9GH5NN2;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = DerivedDataDeleter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.saagarjha.DerivedDataDeleter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		492FF55D2382278F00C4A3F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DerivedDataDeleter/DerivedDataDeleter.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"DerivedDataDeleter/Preview Content\"";
+				DEVELOPMENT_TEAM = X4A9GH5NN2;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = DerivedDataDeleter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.saagarjha.DerivedDataDeleter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		492FF55F2382278F00C4A3F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = X4A9GH5NN2;
+				INFOPLIST_FILE = DerivedDataDeleterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.saagarjha.DerivedDataDeleterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DerivedDataDeleter.app/Contents/MacOS/DerivedDataDeleter";
+			};
+			name = Debug;
+		};
+		492FF5602382278F00C4A3F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = X4A9GH5NN2;
+				INFOPLIST_FILE = DerivedDataDeleterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.saagarjha.DerivedDataDeleterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DerivedDataDeleter.app/Contents/MacOS/DerivedDataDeleter";
+			};
+			name = Release;
+		};
+		492FF5622382278F00C4A3F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = X4A9GH5NN2;
+				INFOPLIST_FILE = DerivedDataDeleterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.saagarjha.DerivedDataDeleterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = DerivedDataDeleter;
+			};
+			name = Debug;
+		};
+		492FF5632382278F00C4A3F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = X4A9GH5NN2;
+				INFOPLIST_FILE = DerivedDataDeleterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.saagarjha.DerivedDataDeleterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = DerivedDataDeleter;
+			};
+			name = Release;
+		};
+		492FF577238227B700C4A3F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Extension/Extension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = X4A9GH5NN2;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = Extension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.saagarjha.DerivedDataDeleter.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		492FF578238227B700C4A3F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Extension/Extension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = X4A9GH5NN2;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = Extension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.saagarjha.DerivedDataDeleter.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		492FF5A123822E0800C4A3F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = X4A9GH5NN2;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.saagarjha.DerivedDataDeleter.Helper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		492FF5A223822E0800C4A3F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = X4A9GH5NN2;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.saagarjha.DerivedDataDeleter.Helper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		492FF52D2382278A00C4A3F3 /* Build configuration list for PBXProject "DerivedDataDeleter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				492FF5592382278F00C4A3F3 /* Debug */,
+				492FF55A2382278F00C4A3F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		492FF55B2382278F00C4A3F3 /* Build configuration list for PBXNativeTarget "DerivedDataDeleter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				492FF55C2382278F00C4A3F3 /* Debug */,
+				492FF55D2382278F00C4A3F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		492FF55E2382278F00C4A3F3 /* Build configuration list for PBXNativeTarget "DerivedDataDeleterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				492FF55F2382278F00C4A3F3 /* Debug */,
+				492FF5602382278F00C4A3F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		492FF5612382278F00C4A3F3 /* Build configuration list for PBXNativeTarget "DerivedDataDeleterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				492FF5622382278F00C4A3F3 /* Debug */,
+				492FF5632382278F00C4A3F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		492FF576238227B700C4A3F3 /* Build configuration list for PBXNativeTarget "Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				492FF577238227B700C4A3F3 /* Debug */,
+				492FF578238227B700C4A3F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		492FF5A023822E0800C4A3F3 /* Build configuration list for PBXNativeTarget "Helper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				492FF5A123822E0800C4A3F3 /* Debug */,
+				492FF5A223822E0800C4A3F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 492FF52A2382278A00C4A3F3 /* Project object */;
+}
